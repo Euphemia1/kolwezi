@@ -16,25 +16,25 @@ const leadership = [
   {
     name: "Jean-Pierre Mutombo",
     role: "Chief Executive Officer",
-    image: "/african-business-man-professional-portrait-ceo.jpg",
+    image: "/photos/IMG-20251208-WA0020.jpg",
     bio: "Over 20 years of experience in mining and construction industries.",
   },
   {
     name: "Marie Kabongo",
     role: "Chief Operations Officer",
-    image: "/african-business-woman-professional-portrait-coo.jpg",
+    image: "/photos/IMG-20251208-WA0021.jpg",
     bio: "Expert in logistics and supply chain management.",
   },
   {
     name: "Patrick Ilunga",
     role: "Technical Director",
-    image: "/african-engineer-man-professional-portrait-directo.jpg",
+    image: "/photos/IMG-20251208-WA0022.jpg",
     bio: "Civil engineering specialist with vast mining sector experience.",
   },
   {
     name: "Sarah Mwamba",
     role: "Finance Director",
-    image: "/african-business-woman-professional-portrait-finan.jpg",
+    image: "/photos/IMG-20251208-WA0023.jpg",
     bio: "Financial strategist ensuring sustainable growth.",
   },
 ]
@@ -180,7 +180,7 @@ export default function AboutPage() {
                 <div className="text-center group">
                   <div className="relative mb-6 overflow-hidden rounded-2xl">
                     <img
-                      src={person.image || "/placeholder.svg"}
+                      src={person.image || "/photos/IMG-20251208-WA0015.jpg"}
                       alt={person.name}
                       className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -229,17 +229,17 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <img src="/iso-certification-badge-quality-management.jpg" alt="ISO Certification" className="rounded-xl shadow-lg" />
                 <img
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/photos/IMG-20251208-WA0013.jpg"
                   alt="Safety Certification"
                   className="rounded-xl shadow-lg mt-8"
                 />
                 <img
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/photos/IMG-20251208-WA0013.jpg"
                   alt="Environmental Certification"
                   className="rounded-xl shadow-lg"
                 />
                 <img
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/photos/IMG-20251208-WA0013.jpg"
                   alt="Government Accreditation"
                   className="rounded-xl shadow-lg mt-8"
                 />

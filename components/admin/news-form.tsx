@@ -241,7 +241,7 @@ export function NewsForm({ article }: { article?: NewsArticle }) {
                 {formData.featured_image && (
                   <div className="mt-2 aspect-video rounded-lg overflow-hidden bg-muted">
                     <img
-                      src={formData.featured_image || "/placeholder.svg"}
+                      src={formData.featured_image || "/photos/IMG-20251208-WA0015.jpg"}
                       alt="Preview"
                       className="w-full h-full object-cover"
                     />

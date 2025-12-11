@@ -20,7 +20,7 @@ const services = [
       "Site preparation and earthworks",
       "Quality assurance and control",
     ],
-    image: "/placeholder.svg?height=500&width=700",
+    image: "/photos/IMG-20251208-WA0014.jpg",
   },
   {
     id: "logistics",
@@ -36,7 +36,7 @@ const services = [
       "Cross-border logistics",
       "Just-in-time delivery services",
     ],
-    image: "/placeholder.svg?height=500&width=700",
+    image: "/photos/IMG-20251208-WA0014.jpg",
   },
   {
     id: "mining",
@@ -52,7 +52,7 @@ const services = [
       "Safety compliance services",
       "Environmental management",
     ],
-    image: "/placeholder.svg?height=500&width=700",
+    image: "/photos/IMG-20251208-WA0014.jpg",
   },
   {
     id: "procurement",
@@ -68,7 +68,7 @@ const services = [
       "Quality inspections",
       "Cost reduction strategies",
     ],
-    image: "/placeholder.svg?height=500&width=700",
+    image: "/photos/IMG-20251208-WA0014.jpg",
   },
   {
     id: "consulting",
@@ -84,7 +84,7 @@ const services = [
       "Regulatory compliance",
       "Strategic planning",
     ],
-    image: "/placeholder.svg?height=500&width=700",
+    image: "/photos/IMG-20251208-WA0014.jpg",
   },
   {
     id: "maintenance",
@@ -100,7 +100,7 @@ const services = [
       "Cement block manufacturing",
       "Paver production services",
     ],
-    image: "/placeholder.svg?height=500&width=700",
+    image: "/photos/IMG-20251208-WA0014.jpg",
   },
 ]
 
@@ -137,7 +137,7 @@ export default function ServicesPage() {
                   <ScrollAnimation direction={index % 2 === 0 ? "left" : "right"}>
                     <div className={`relative ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                       <img
-                        src={service.image || "/placeholder.svg"}
+                        src={service.image || "/photos/IMG-20251208-WA0015.jpg"}
                         alt={service.title}
                         className="w-full rounded-2xl shadow-2xl"
                       />

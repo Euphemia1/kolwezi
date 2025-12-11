@@ -97,7 +97,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
           <div className="container mx-auto px-4">
             <ScrollAnimation className="max-w-5xl mx-auto">
               <img
-                src={article.featured_image || "/placeholder.svg"}
+                src={article.featured_image || "/photos/IMG-20251208-WA0015.jpg"}
                 alt={article.title}
                 className="w-full aspect-[21/9] object-cover rounded-2xl"
               />
@@ -148,7 +148,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
                   <Link href={`/news/${related.slug}`} className="group block">
                     <div className="relative overflow-hidden rounded-xl mb-4">
                       <img
-                        src={related.featured_image || "/placeholder.svg?height=200&width=400&query=news"}
+                        src={related.featured_image || "/photos/IMG-20251208-WA0017.jpg"}
                         alt={related.title}
                         className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500"
                       />

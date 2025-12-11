@@ -68,7 +68,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
                     <div className="relative overflow-hidden rounded-2xl mb-4">
                       <img
                         src={
-                          project.featured_image || "/placeholder.svg?height=400&width=600&query=construction project"
+                          project.featured_image || "/photos/IMG-20251208-WA0018.jpg"
                         }
                         alt={project.title}
                         className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
@@ -132,7 +132,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={selectedProject.featured_image || "/placeholder.svg?height=400&width=800&query=construction project"}
+              src={selectedProject.featured_image || "/photos/IMG-20251208-WA0019.jpg"}
               alt={selectedProject.title}
               className="w-full aspect-video object-cover"
             />

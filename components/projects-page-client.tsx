@@ -77,7 +77,7 @@ export function ProjectsPageClient({ projects, stats }: ProjectsPageClientProps)
                       <img
                         src={
                           project.featured_image ||
-                          `/placeholder.svg?height=400&width=600&query=${project.category || "/placeholder.svg"} project`
+                          `/photos/IMG-20251208-WA0018.jpg`
                         }
                         alt={project.title}
                         className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
@@ -119,7 +119,7 @@ export function ProjectsPageClient({ projects, stats }: ProjectsPageClientProps)
             <img
               src={
                 selectedProject.featured_image ||
-                `/placeholder.svg?height=400&width=800&query=${selectedProject.category || "/placeholder.svg"} project`
+                `/photos/IMG-20251208-WA0019.jpg`
               }
               alt={selectedProject.title}
               className="w-full aspect-video object-cover"

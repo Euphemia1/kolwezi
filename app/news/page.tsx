@@ -59,7 +59,7 @@ export default async function NewsPage() {
                   <Link href={`/news/${article.slug}`} className="group block">
                     <div className="relative overflow-hidden rounded-2xl mb-4">
                       <img
-                        src={article.featured_image || "/placeholder.svg?height=300&width=500&query=news article"}
+                        src={article.featured_image || "/photos/IMG-20251208-WA0016.jpg"}
                         alt={article.title}
                         className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500"
                       />

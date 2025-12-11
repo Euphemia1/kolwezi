@@ -24,7 +24,7 @@ export function PartnersSection() {
           {partners.map((partner, index) => (
             <ScrollAnimation key={partner.name} delay={index * 50}>
               <div className="flex items-center justify-center p-4 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-                <img src={partner.logo || "/placeholder.svg"} alt={partner.name} className="max-h-12 w-auto" />
+                <img src={partner.logo || "/photos/IMG-20251208-WA0015.jpg"} alt={partner.name} className="max-h-12 w-auto" />
               </div>
             </ScrollAnimation>
           ))}
