@@ -14,28 +14,22 @@ const values = [
 
 const leadership = [
   {
-    name: "Jean-Pierre Mutombo",
-    role: "Chief Executive Officer",
-    image: "/photos/IMG-20251208-WA0020.jpg",
-    bio: "Over 20 years of experience in mining and construction industries.",
+    name: "John Petulo",
+    role: "Marketing Manager",
+    image: "/photos/john petulo.jpeg",
+    bio: "Experienced marketing professional with expertise in promoting industrial services in the DRC market.",
   },
   {
-    name: "Marie Kabongo",
-    role: "Chief Operations Officer",
-    image: "/photos/IMG-20251208-WA0021.jpg",
-    bio: "Expert in logistics and supply chain management.",
+    name: "Gerard Fataki Lusinji",
+    role: "Managing Director",
+    image: "/photos/Gerad fataka lusinji.jpeg",
+    bio: "Seasoned executive leader with extensive experience in managing large-scale industrial operations in the DRC.",
   },
   {
-    name: "Patrick Ilunga",
-    role: "Technical Director",
-    image: "/photos/IMG-20251208-WA0022.jpg",
-    bio: "Civil engineering specialist with vast mining sector experience.",
-  },
-  {
-    name: "Sarah Mwamba",
-    role: "Finance Director",
-    image: "/photos/IMG-20251208-WA0023.jpg",
-    bio: "Financial strategist ensuring sustainable growth.",
+    name: "Katendi Mwepu",
+    role: "Technical Manager",
+    image: "/photos/katendi mwepu.jpeg",
+    bio: "Technical expert specializing in engineering solutions and industrial process optimization.",
   },
 ]
 
@@ -45,6 +39,7 @@ const certifications = [
   "OHSAS 18001 Occupational Health & Safety",
   "DRC Ministry of Mines Accreditation",
 ]
+
 
 export default function AboutPage() {
   return (
@@ -67,13 +62,14 @@ export default function AboutPage() {
         </div>
       </section>
 
+
       {/* Company History */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <ScrollAnimation direction="left">
               <div className="relative">
-                <img src="/mining-construction-company-history-team-old-photo.jpg" alt="KMS History" className="w-full rounded-2xl shadow-2xl" />
+                <img src="/photos/about us.jpg" alt="KMS History" className="w-full rounded-2xl shadow-2xl" />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-xl">
                   <div className="text-4xl font-bold">2010</div>
                   <div className="text-sm opacity-80">Year Founded</div>
@@ -174,7 +170,7 @@ export default function AboutPage() {
             </p>
           </ScrollAnimation>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 mx-auto max-w-4xl">
             {leadership.map((person, index) => (
               <ScrollAnimation key={person.name} delay={index * 100}>
                 <div className="text-center group">

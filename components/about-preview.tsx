@@ -19,7 +19,7 @@ export function AboutPreview() {
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/construction-workers-engineers-industrial-mining-s.jpg"
+                  src="/photos/about us.jpg"
                   alt="KMS Team at Work"
                   className="w-full h-[500px] object-cover"
                 />

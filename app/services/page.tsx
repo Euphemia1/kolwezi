@@ -20,7 +20,7 @@ const services = [
       "Site preparation and earthworks",
       "Quality assurance and control",
     ],
-    image: "/photos/IMG-20251208-WA0014.jpg",
+    image: "/photos/construction and engineering.jpg",
   },
   {
     id: "logistics",
@@ -36,7 +36,7 @@ const services = [
       "Cross-border logistics",
       "Just-in-time delivery services",
     ],
-    image: "/photos/IMG-20251208-WA0014.jpg",
+    image: "/photos/logisitics solution.jpg",
   },
   {
     id: "mining",
@@ -52,7 +52,7 @@ const services = [
       "Safety compliance services",
       "Environmental management",
     ],
-    image: "/photos/IMG-20251208-WA0014.jpg",
+    image: "/photos/mining support.jpg",
   },
   {
     id: "procurement",
@@ -68,7 +68,7 @@ const services = [
       "Quality inspections",
       "Cost reduction strategies",
     ],
-    image: "/photos/IMG-20251208-WA0014.jpg",
+    image: "/photos/procurement services.jpg",
   },
   {
     id: "consulting",
@@ -84,7 +84,7 @@ const services = [
       "Regulatory compliance",
       "Strategic planning",
     ],
-    image: "/photos/IMG-20251208-WA0014.jpg",
+    image: "/photos/consulting and contracting.jpg",
   },
   {
     id: "maintenance",
@@ -100,7 +100,7 @@ const services = [
       "Cement block manufacturing",
       "Paver production services",
     ],
-    image: "/photos/IMG-20251208-WA0014.jpg",
+    image: "/photos/industrial maintenance.jpg",
   },
 ]
 

@@ -1,4 +1,3 @@
-import { query } from "@/lib/db"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollAnimation } from "@/components/scroll-animation"
@@ -13,22 +12,88 @@ const benefits = [
   { icon: Briefcase, title: "Competitive Pay", description: "Market-leading salaries and performance bonuses" },
 ]
 
-interface Job {
-  id: string
-  title: string
-  slug: string
-  department: string
-  location: string
-  employment_type: string
-  experience_level: string
-  description: string
-  requirements: string
-  responsibilities: string
-}
+// Static job data for demonstration
+const staticJobs = [
+  {
+    id: "1",
+    title: "Senior Civil Engineer",
+    slug: "senior-civil-engineer",
+    department: "Engineering",
+    location: "Kolwezi, DRC",
+    employment_type: "Full-time",
+    experience_level: "Senior",
+    description: "We are seeking an experienced Civil Engineer to lead major construction projects and mentor junior team members.",
+    requirements: [
+      "Bachelor's degree in Civil Engineering",
+      "7+ years of experience",
+      "Professional engineering license",
+      "Experience with large-scale infrastructure projects",
+      "Strong leadership skills"
+    ],
+    responsibilities: [
+      "Lead project design and execution",
+      "Manage engineering team",
+      "Ensure quality and safety compliance",
+      "Client relationship management",
+      "Budget and timeline oversight"
+    ]
+  },
+  {
+    id: "2",
+    title: "Logistics Coordinator",
+    slug: "logistics-coordinator",
+    department: "Operations",
+    location: "Kolwezi, DRC",
+    employment_type: "Full-time",
+    experience_level: "Mid",
+    description: "Join our logistics team to coordinate transportation and supply chain operations for our mining and construction clients.",
+    requirements: [
+      "Bachelor's degree in Logistics or related field",
+      "3+ years of experience",
+      "Knowledge of regional transportation networks",
+      "Strong organizational skills",
+      "Proficiency in logistics software"
+    ],
+    responsibilities: [
+      "Coordinate daily logistics operations",
+      "Manage fleet scheduling",
+      "Optimize supply chain efficiency",
+      "Maintain vendor relationships",
+      "Ensure timely deliveries"
+    ]
+  },
+  {
+    id: "3",
+    title: "Heavy Equipment Operator",
+    slug: "heavy-equipment-operator",
+    department: "Operations",
+    location: "Kolwezi, DRC",
+    employment_type: "Full-time",
+    experience_level: "Mid",
+    description: "Operate various heavy equipment for construction and mining support operations.",
+    requirements: [
+      "Valid heavy equipment operator certification",
+      "3+ years of experience",
+      "Safety training certifications",
+      "Ability to work in challenging environments",
+      "Basic mechanical knowledge"
+    ],
+    responsibilities: [
+      "Operate excavators, loaders, and trucks",
+      "Perform daily equipment inspections",
+      "Follow safety protocols",
+      "Report maintenance needs",
+      "Support project completion"
+    ]
+  }
+]
 
+// Temporary function that returns static data instead of querying database
 async function getJobs() {
-  const jobs = await query<Job>("SELECT * FROM job_postings WHERE is_active = TRUE ORDER BY created_at DESC")
-  return jobs
+  // Temporary fix: return static data instead of querying database
+  // const jobs = await query<Job>("SELECT * FROM job_postings WHERE is_active = TRUE ORDER BY created_at DESC")
+  // return jobs
+  return staticJobs
 }
 
 export default async function CareersPage() {
@@ -37,7 +102,7 @@ export default async function CareersPage() {
   return (
     <main className="min-h-screen">
       <Navigation />
-
+      
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4">
@@ -53,14 +118,14 @@ export default async function CareersPage() {
           </ScrollAnimation>
         </div>
       </section>
-
+      
       {/* Benefits */}
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <ScrollAnimation className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold">Why Work With Us?</h2>
           </ScrollAnimation>
-
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <ScrollAnimation key={benefit.title} delay={index * 100}>
@@ -76,13 +141,13 @@ export default async function CareersPage() {
           </div>
         </div>
       </section>
-
+      
       {/* Job Openings */}
       <JobsList jobs={jobs} />
-
+      
       {/* Application Form */}
       <ApplicationForm jobs={jobs} />
-
+      
       <Footer />
     </main>
   )
