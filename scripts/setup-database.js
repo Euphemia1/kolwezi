@@ -14,11 +14,11 @@ async function setupDatabase() {
   
   try {
     // Create database if it doesn't exist
-    await connection.query(`CREATE DATABASE IF NOT EXISTS \`\${process.env.MYSQL_DATABASE || 'kms_sarl'}\``);
+    await connection.query(`CREATE DATABASE IF NOT EXISTS \`${process.env.MYSQL_DATABASE || 'kms'}\``);
     console.log('Database created or already exists');
     
     // Use the database
-    await connection.query(`USE \`\${process.env.MYSQL_DATABASE || 'kms_sarl'}\``);
+    await connection.query(`USE \`${process.env.MYSQL_DATABASE || 'kms'}\``);
     
     // Create tables
     console.log('Creating tables...');
